@@ -1,8 +1,11 @@
 import React from "react";
+import Circle from "./components/UI/circle/Circle";
 function App() {
   return (
     <div className="App">
-      <h1>Лох</h1>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+            <Circle/>
+        </div>
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px dashed red;
+    -webkit-transition: all 0.5s ease;;
+    -moz-transition: all 0.5s ease;;
+    -o-transition: all 0.5s ease;;
+    transition: all 0.5s ease;
+}
+
+.circle:hover{
+    -webkit-transform: scale(1.2) rotateZ(90deg);
+    -ms-transform: scale(1.2) rotateZ(90deg);
+    transform: scale(1.2) rotateZ(90deg);
+}
