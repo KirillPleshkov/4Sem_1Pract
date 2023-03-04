@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import cl from './Circle.module.css';
-const Circle = (props) => {
-    const [isActive, setIsActive] = useState(false)
+
+const Circle = ({isRed}) => {
+    const classes = cl.circle + ' ' + (isRed ? cl.red : cl.blue)
 
     return (
-        <div className={cl.circle}></div>
+        <div className={classes}></div>
     );
 };
 
