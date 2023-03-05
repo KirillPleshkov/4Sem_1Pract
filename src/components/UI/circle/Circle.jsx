@@ -1,11 +1,15 @@
 import React, {useState} from 'react';
 import cl from './Circle.module.css';
 
-const Circle = ({isRed}) => {
+const Circle = ({isRed, top, left, index}) => {
     const classes = cl.circle + ' ' + (isRed ? cl.red : cl.blue)
 
+    const Click = () => {
+        console.log(index)
+    }
+
     return (
-        <div className={classes}></div>
+        <div onClick={Click} className={classes} style={{top: top, left: left}}></div>
     );
 };
 

@@ -1,5 +1,17 @@
-.field{
-    width: 600px;
-    height: 600px;
+.container {
+    position: relative;
+    width: 695px;
+    height: 695px;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
+.field {
+    position: absolute;
+    top	: 0;
+    left: 0;
+    width: 695px;
+    height: 695px;
+    z-index: 1;
+}

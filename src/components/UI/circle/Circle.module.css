@@ -1,8 +1,9 @@
 .circle{
+    position: absolute;
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border: 2px dashed;
+    border: 3px dashed;
 
     -webkit-transition: all 0.5s ease;;
     -moz-transition: all 0.5s ease;;
