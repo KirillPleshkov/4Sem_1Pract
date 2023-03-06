@@ -15,3 +15,36 @@
     height: 695px;
     z-index: 1;
 }
+
+.rightLine {
+    position: absolute;
+    border: 3px solid;
+    width: 85px;
+    height: 0;
+}
+
+.topLine {
+    position: absolute;
+    border: 3px solid;
+    width: 85px;
+    height: 0;
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.red {
+    border-color: red;
+}
+
+.blue {
+    border-color: blue;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+}

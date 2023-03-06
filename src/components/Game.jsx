@@ -19,15 +19,17 @@ const Game = () => {
 
     const [buttons, setButtons] = useState(CreateButtons)
 
+    const [storyRed, setStoryRed] = useState([])
+    const [storyBlue, setStoryBlue] = useState([])
 
+    const state = {isStart, setIsStart, isRed, setIsRed, buttons, setButtons, storyRed, setStoryRed, storyBlue, setStoryBlue}
 
     return (
         <div>
             <div className="container">
                 <img src={Im} alt=""/>
-                <Field buttons={buttons} className={cl.field}/>
+                <Field state={state} className={cl.field}/>
             </div>
-
         </div>
 
     );
