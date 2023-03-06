@@ -48,3 +48,18 @@
     height: 2em;
     width: 2em;
 }
+
+.win {
+    position: absolute;
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+}
+.win h2 {
+    color: chartreuse;
+}
+
+.about {
+    display:flex;
+
+}

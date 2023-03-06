@@ -54,10 +54,34 @@ const Field = ({state}) => {
         return rezult
     }
 
+    const Reload = () => {
+        window.location.reload()
+    }
+
     let arr = []
 
     return (
         <div className="field" >
+            <button name="button" onClick={Reload}>R</button>
+            {
+                (state.buttons.length === 0)
+                ?
+                    <div className="win">
+                        <h2>Конец игры</h2>
+                        {
+                            (state.isRed === false)
+                            ?
+                                <h3>Выиграл красный</h3>
+                            :
+                                <h3>Выиграл синий</h3>
+                        }
+                        {
+                            state.setIsWin(true)
+                        }
+                    </div>
+                :
+                    <div/>
+            }
             {
                 state.buttons.map((element) =>
                     <div>
